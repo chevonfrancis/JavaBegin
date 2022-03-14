@@ -4,8 +4,27 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListOfPeople {
-	 public List<String> person = new ArrayList<>();
+	
+	
+	 List<String> PersonList = new ArrayList<>();
 	 
-	 person.add()
+	 public PersonList() {
+		 
+
+	 PersonList.add(alex);
+	 
+	 public void search (String name, int age) {
+		 for (person person : thisPersonList) {
+			 
+		 }
+	 
+
+	 
+	 
+	 
+	 
+	 
+	}
+}
 
 }

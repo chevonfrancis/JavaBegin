@@ -17,7 +17,18 @@ public class Runner {
 		System.out.println(vanassa);
 		System.out.println(alex.getAge());
 		System.out.println(emily.getJobTitle());
+		System.out.println(alex.toString());
 		
+		PersonList pl = new PersonList();
+		pl.addPerson();
+		
+		pl.search();
+		pl.printall();
+		
+		
+		
+		
+	
 	
 		
 	}
