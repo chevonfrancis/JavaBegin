@@ -5,21 +5,34 @@ public class Runner {
 		
 		DisneyPrincess p1 = new DisneyPrincess();
 		p1.name = "Jasmine";
-		p1.hairColour = "black";
-		p1.dressSize = 8;
-		p1.poshLevel = 10; 
-		
+		p1.age = 14;
+		p1.jobTitle = "Investigator";
 		p1.fairyGodma();
 		
 		System.out.println();
 		
-		System.out.println("Name: " + p1.name + "\n" + "Hair Colour: " + p1.hairColour + "\n" + "How Posh is She? " + p1.poshLevel);
+		System.out.println("Name: " + p1.name + "\n" + "Age: " + p1.age + "\n" + "Job Title " + p1.jobTitle);
 		
 		DisneyPrincess p2 = new DisneyPrincess();
-		p2.name = "Cinderella";
-		p2.hairColour = "brown";
-		p2.dressSize = 7;
-		p2.poshLevel = 3; 
+		p1.name = "Cinderella";
+		p1.age = 16;
+		p1.jobTitle = "Cleaner";
+		p1.fairyGodma();
+		
+		DisneyPrincess p3 = new DisneyPrincess();
+		p1.name = "Swan Princess";
+		p1.age = 15;
+		p1.jobTitle = "Feeder";
+		p1.fairyGodma();
+		
+		
+		DisneyPrincess p = new DisneyPrincess();
+		p1.name = "Fiona";
+		p1.age = 16;
+		p1.jobTitle = "Zoo Keeper";
+		p1.fairyGodma();
+		
+		
 
 	
 	}
