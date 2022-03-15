@@ -1,7 +1,8 @@
 package com.qa.oop.garageDemo;
 
-public class Vehicle {
+public abstract class Vehicle {
 	
+	private String type;
 	private int seats;
 	private String colour;
 	private int storageIn;
@@ -15,6 +16,15 @@ public class Vehicle {
 		this.storageIn = storageIn;
 	}
 
+	public String getType() {
+		return type;
+	}
+
+
+	public void setType(String type) {
+		this.type = type;
+	}
+	
 	public int getSeats() {
 		return seats;
 	}
@@ -38,11 +48,17 @@ public class Vehicle {
 	public void setStorageIn(int storageIn) {
 		this.storageIn = storageIn;
 	}
+	
+	public abstract double getTheBill();
+
 
 	@Override
 	public String toString() {
-		return "Vehicle [seats=" + seats + ", colour=" + colour + ", Storage Inches= " + storageIn + "]";
+		return "Vehicle [type=" + type + ", seats=" + seats + ", colour=" + colour + ", storageIn=" + storageIn + "]";
 	}
+
+	
+
 	
 	
 	

@@ -3,15 +3,16 @@ package com.qa.oop.garageDemo;
 public class MotorBike extends Vehicle{
 	
 	private int maxMPH; 
-	private String type; 
+	private String bikeType; 
 
-	public MotorBike(int seats, String colour, int storageIn, int maxMPH, String type) {
+	public MotorBike(String type, int seats, String colour, int storageIn, int maxMPH, String bikeType) {
+		this.setType(bikeType);
 		this.setSeats(seats);
 		this.setColour(colour);
 		this.setStorageIn(storageIn);
 		
 		this.maxMPH = maxMPH;
-		this.type = type;
+		this.bikeType = bikeType;
 		
 		
 	}
@@ -24,18 +25,23 @@ public class MotorBike extends Vehicle{
 		this.maxMPH = maxMPH;
 	}
 
-	public String getType() {
-		return type;
+	public void setType(String bikeType) {
+		this.bikeType = bikeType;
 	}
+	
+	
 
-	public void setType(String type) {
-		this.type = type;
-	}
 
 	@Override
 	public String toString() {
-		return "MotorBike [maxMPH=" + maxMPH + ", type=" + type + ", getSeats()=" + getSeats() + ", getColour()="
-				+ getColour() +  ", storageIn=" + getStorageIn() + "]";
+		return "MotorBike [maxMPH=" + maxMPH + ", Bike type=" + bikeType + ", getType()=" + getType() + ", getSeats()="
+				+ getSeats() + ", getColour()=" + getColour() + ", getStorageIn()=" + getStorageIn() + "]";
+	}
+
+	@Override
+	public double getTheBill() {
+		// TODO Auto-generated method stub
+		return this.getMaxMPH() * 125;
 	}
 
 	
